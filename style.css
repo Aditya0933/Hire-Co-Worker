@@ -111,11 +111,6 @@ nav{
     font-size: 1.5rem;
 }
 
-
-
-
-
-
 .nav-content-2{
     padding: 4rem 3rem;
 }
@@ -124,4 +119,58 @@ nav{
     width: 60rem;
     border:1.5rem solid rgb(228, 11, 210); 
        
+}
+
+/* Main Container */ 
+
+.main-container-services{
+  row-gap: 2rem;  
+}
+.main-container-services big{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.main-container-services h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+
+.main-container-services-types{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+    padding: 4rem 6rem;
+    background-color: #F6F9FD;
+}
+.service-types{
+    padding: 2.5rem;
+    border-radius: 1rem;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.service-types i{
+    color: #ED1575;
+    font-size: 3rem;
+}
+.service-types h3{
+    font-size: 2rem;
+    font-weight: 650;
+    padding-top: 1.5rem;
+}
+.service-types p{
+    font-size: 1.9rem;
+    font-weight: 500;
+    padding-top: 1.5rem;
+    color: rgb(173, 170, 170);
+}
+.service-types u {
+    color: #ED1575;
+   
+}
+.service-types u small{
+    color: #ED1575;
+    font-size: 2rem;
+    padding-top: 2rem;
 }
