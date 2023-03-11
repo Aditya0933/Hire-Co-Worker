@@ -1,68 +1,114 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 html{
-    font-size: 80%;
+    font-size: 62.5%;
 }
-nav{
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-    color: #0f0f0f;
+
+/* For Center any Div */
+
+.content-center-flex{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
-.nav-web-main-logo{
-    padding: 1% 0 1% 2%;
-}
-.content-center-1{
+.content-center-grid{
     display: grid;
     place-items: center;
 }
-.content-center-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.landing-video{
+    position: relative;
+    width: 100%;
+    background-color: rgb(0,0,0,0.2);
+    /* z-index: -1; */
 }
-.nav-web-service ul li{
-    float: left;
+.nav-total-content{
+    position: absolute;
+    top: 0;
+}
+
+/* Navigation */
+
+nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between; 
+    background-color: transparent;  
+    color:#FFFF;
+    padding: 2rem 5rem;
+}
+
+.nav-logo img{
+    width: 8rem;
+    height: 5rem;
+}
+
+.nav-service ul li{
     list-style-type: none;
-    text-align: center;
-    padding: 0 2rem 0 0;
+    display: inline-block;
     font-size: 2rem;
+    padding-right: 2rem;
 }
 .nav-btn{
-    background-color: transparent;
-    /* background-color: rgb(18, 19, 19); */
+    padding: 1rem 3rem;
+    background: transparent;
+    border: .1rem solid #FFFF;
     color: #FFFF;
-    padding:  0.4rem 0.8rem;
-    border: 0.1875rem solid #141414;
-    border-radius: 0.8rem;
+    border-radius: 1.5rem;
 }
-.nav-connect-btn{
-    background-color: transparent; 
+.nav-btn button{
+    background: transparent;
     color: #FFFF;
     border: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
+    font-size: 2rem;
 }
-.nav-container{
+
+ /* Navigation Content */ 
+
+.nav-content{
     display: grid;
-    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 3rem;
+    margin-top:10rem;
+    padding: 0 10rem;
+    background-color:transparent;
+    color: #FFFF;
 }
-.nav-container-1{
-    background-color: #0f0f0f;
-    color: aqua;
+.nav-content-1 h3{
+    font-size: 2rem;
 }
-.nav-container-2{
-    background-color: #cb0d0d;
-    color: rgb(35, 0, 232);
+.nav-content-1 h1{
+    font-size: 6rem;
+    max-width: 50rem;
+    padding-top: 1.5rem;
 }
-.nav-container-1-btn{
+.nav-content-1 p{
+    max-width: 60rem;
+    font-size: 1.5rem;
+    font-weight: 550;
+    padding-top: 2rem;
+}
+.nav-content-btn{
+    display: flex;
     float: left;
+    gap: 2rem;
+}
+.btn{
+    margin-top: 4rem;
+    background-color: #ED1575;
+    padding: 1rem 2rem;
+    border-radius: 1rem;  
+    font-size: 2rem; 
+}
+.btn button{
+    margin-left: 1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
 }
 
 
@@ -70,13 +116,12 @@ nav{
 
 
 
-@media(max-width:750px){
-    html{
-        font-size: 60%;
-    }
+.nav-content-2{
+    padding: 4rem 3rem;
 }
-/* @media(max-width:620px){
-    html{
-        font-size: 60%;
-    }
-} */
+.back-video{
+    height: 35rem;
+    width: 60rem;
+    border:1.5rem solid rgb(228, 11, 210); 
+       
+}
