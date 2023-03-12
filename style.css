@@ -121,10 +121,16 @@ nav{
        
 }
 
+
+
 /* Main Container */ 
 
+
+
+/* Service Section */
 .main-container-services{
   row-gap: 2rem;  
+  padding: 3rem 10rem;
 }
 .main-container-services big{
     font-size: 2rem;
@@ -149,6 +155,8 @@ nav{
     border-radius: 1rem;
     background-color: #FFFFFF;
     color: #000000;
+    
+    
 }
 .service-types i{
     color: #ED1575;
@@ -173,4 +181,295 @@ nav{
     color: #ED1575;
     font-size: 2rem;
     padding-top: 2rem;
+}
+
+.view-more-btn{
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    background-color: #ED1575;
+    border: none;
+    color: #FFFFFF;
+
+}
+/* Pricing  */
+
+.main-container-pricing{
+    row-gap: 2rem;
+    padding: 3rem 10rem;  
+  }
+  .main-container-pricing big{
+      font-size: 2rem;
+      font-weight: 600;
+  }
+  .main-container-pricing h1{
+      font-size: 4rem;
+      font-weight: 600;
+  }
+  
+  
+  .main-container-pricing-types{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      column-gap: 11rem;
+      row-gap: 3rem;
+      padding: 4rem 6rem;
+      background-color: #F6F9FD;
+  }
+  .price-types{
+      padding: 2.5rem;
+      border-radius: 1rem;
+      background-color: #FFFFFF;
+      color: #000000;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #000000;
+    box-shadow: 0px 8px 1rem #000000;
+  }
+  .price-types i{
+      color: #ED1575;
+      font-size: 3rem;
+  }
+  .price-types h3{
+      font-size: 2rem;
+      font-weight: 650;
+      padding-top: 1.5rem;
+  }
+  .price-types p{
+      font-size: 1.9rem;
+      font-weight: 500;
+      padding-top: 1.5rem;
+      color: rgb(173, 170, 170);
+  }
+  .price-types u {
+      color: #ED1575;
+     
+  }
+  .price-types u small{
+      color: #ED1575;
+      font-size: 2rem;
+      margin-top: 5rem;
+      font-weight: 900;
+  }
+  
+  .view-more-btn{
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      font-size: 2rem;
+      background-color: #ED1575;
+      border: none;
+      color: #FFFFFF;
+  }
+  
+  /* Collabration Section */
+
+  .main-container-collabration-section{
+    padding: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .main-container-collabration-section-content big{
+    color: #ED1575;
+    font-size: 2rem;
+    font-weight: 600;
+    
+  }
+  .main-container-collabration-section-content h1{
+    color: #000000;
+    font-size: 5rem;
+    font-weight: 600;
+    padding-top: 2rem;
+  }
+  .main-container-collabration-section-content h1 span{
+    color: #ED1575;
+  }
+  .main-container-collabration-section-content .coll-para{
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 60rem;
+    padding-top: 2rem;
+  }
+  .main-container-collabration-section-content ul{
+    padding-top: 3rem;
+  }
+  .main-container-collabration-section-content ul li{
+    list-style-type: none;
+    padding-top: 1rem;
+  }
+  .collabration-tag i{
+    font-size: 1.5rem;
+    float: left;
+    color: #ED1575;
+  }
+  .collabration-tag i{
+    font-size: 2rem;
+  }
+  .collabration-tag p{
+    font-size: 2rem;
+    padding-left: 3rem;
+  }
+
+  .main-container-collabration-section-image img{
+    height: auto;
+    width: 50rem;
+  }
+
+/* About Section */
+
+.div{
+    display: grid;
+    grid-template-rows: 80rem ,1fr;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3rem 10rem;
+    gap: 3rem;
+}
+.div1{
+    grid-row-start: 1;grid-row-end: 2;
+    grid-column-start: 1;grid-column-end: 3;
+}
+.div1 big{
+    color: #ED1575;
+    font-size: 2rem;
+    margin-top: 5rem;
+    font-weight: 900;
+}
+.div1 h1{
+    color: #000000;
+    font-size: 5rem;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+.div1 p{
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 140rem;
+    padding-top: 2rem;
+}
+.div2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.div2 img{
+    width: 60rem;
+    height: auto;
+    border-radius: 2rem;
+}
+.div3 h3{
+    font-size: 2.5rem;
+}
+.div3 ul{
+    padding-top: 3rem;
+}
+.div3 ul li{
+    list-style-type: none;
+    padding-top: 1rem;
+}
+.div3 .div3-para{
+    padding-top:3rem;
+    font-size: 2rem;
+}
+/* Process Section */
+
+.process-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3rem 10rem;
+    gap: 4rem;
+}
+.section-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.section-1 small{
+    color: #ED1575;
+    font-size: 2rem;
+    margin-top: 4rem;
+    font-weight: 900;
+}
+.section-1 h1{
+    color: #000000;
+    font-size: 5rem;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+.section-2 img{
+    width: 30rem;
+}
+.section-3{
+    position: relative;
+}
+.section-33{
+    position: absolute;
+    background-color: #2B2350;
+    color: #FFFFFF;
+    padding: 3rem 5rem;
+    border-radius: 1rem;
+    bottom: 3rem;
+}
+.section-33 h1{
+    font-size: 3rem;
+}
+.section-33 p{
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    max-width: 50rem;
+}
+.section-33 button{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    background: transparent;
+    border: .1rem solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+/* Form Section */
+
+.form-section-container{
+    padding: 8rem 35rem;
+    
+}
+.form-content{
+    background-color: #2B2350;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 6rem 4rem;
+    font-size: 2rem;
+}
+.form-content h1{
+    padding-bottom: 4rem;
+}
+.form-content input{
+    
+    height: 50px;
+    border-radius: .5rem;
+    border: none;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+.form-content textarea{
+    font-size: 2.5rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    border-radius: .5rem;
+}
+
+.form-content button{
+    padding: 1.5rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 1rem;
+    background: transparent;
+    color: #FFFFFF;
+    margin-top: 2rem;
 }
