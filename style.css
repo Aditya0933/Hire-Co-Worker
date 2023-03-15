@@ -29,7 +29,10 @@ body{
 }
 
 /* Navigation */
-
+.navigation-bar{
+    background-image: linear-gradient(90deg, red ,yellow,
+    green, blue, pink, violet, gray,brown, purple, orange );
+}
 nav {
     width: 100%;
     height: auto;
@@ -585,9 +588,6 @@ nav {
 
 .display-flex {
     display: flex;
-}
-.mailus{
-    margin: 0 4rem 0 4rem;
 }
 .footer-section-1{
     margin: 0 5% 5% 5%;
