@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="back-landing-video">
+    <div class="navigation-bar">
         <nav>
             <div class="nav-logo">
                 <img src="./IMG/new-logo-white.png" alt="">
@@ -23,17 +23,17 @@
                     <li>About</li>
                     <li>Contact</li>
                     <li>
-                        <div class="nav-btn content-center-flex"><i class="fa fa-phone"></i><button>CONNECT
-                                US</button>
+                        <div class="nav-btn content-center-flex"><i class="fa fa-phone"></i><button>CONNECT US</button>
                         </div>
                     </li>
                 </ul>
             </div>
         </nav>
+        <!--navigaton content -->
         <div class="nav-content">
             <div class="nav-content-1">
-                <h3>Hire Coworker / Virtual Assistant</h3>
-                <h1>Life Is Better With A Virtual Assistant</h1>
+                <h1>Hire Coworker / Virtual Assistant</h1>
+                <h2>Life Is Better With <br>A Virtual Assistant</h2>
                 <p>A virtual assistant is an independent contractor that performs administrative support services
                     for
                     clients away from the client's office. Although virtual assistant frequently works from
@@ -42,29 +42,32 @@
                     have remote access to the necessary planning resources.</p>
                 <div class="nav-content-btn">
                     <div class="btn content-center-flex">
-                        <i class="fa fa-user" style="color: black;"></i>
+                        <i class="fa fa-user"></i>
                         <button>REQUEST SERVICE</button>
                     </div>
                     <div class="btn content-center-flex">
-                        <i class="fa fa-phone" style="color: black;"></i><button>CALL US</button>
+                        <i class="fa fa-phone"></i>
+                        <button>CALL US</button>
                     </div>
                 </div>
             </div>
-            <div class="nav-content-2">
-                <video autoplay loop muted plays-inline class="nav-content-video">
-                    <source src="./IMG/landing-vid.mp4">
-                </video>
+            <div class="nav-content-2 content-center-grid">
+                <div class="nav-content-2-img">
+                    <video autoplay loop muted plays-inline class="nav-content-2-video">
+                        <!-- <source src="./IMG/landing-vid.mp4"> -->
+                    </video>
+                </div>
             </div>
         </div>
     </div>
-
     <!-- Main Container -->
     <div class="main-container">
+        
         <!-- Services Section start-->
         <div class="main-container-services main-container-section-padding content-center-grid">
             <big class="main-container-big">SERVICES</big>
             <h1 class="main-container-h1">WHAT WE OFFER TO YOU</h1>
-
+            <!-- Service Grid container-->
             <div class="main-container-services-types">
                 <div class="service-types">
                     <i class="fa fa-chrome"></i>
@@ -133,13 +136,14 @@
             <button class="view-more-btn">View More</button>
         </div>
         <!-- Services Section end-->
+
         <!-- Pricing Section start-->
         <div class="main-container-pricing main-container-section-padding content-center-grid">
             <big class="main-container-big">PRICING</big>
             <h1 class="main-container-h1">OUR PRICING STARTS FROM</h1>
-
+            <!-- Pricing Grid Container -->
             <div class="main-container-pricing-types">
-                <div class="price-types">
+                <div class="price-types content-center-flex">
                     <h3>IT OUTSOURCING SERVICES</h3>
                     <p>Starting just at</p>
                     <u><small>$5 / HOUR</small></u>
@@ -183,6 +187,7 @@
             <button class="view-more-btn">MORE PRICING</button>
         </div>
         <!-- Pricing Section end-->
+
         <!-- Collabration Section Start-->
         <div class="main-container-collabration main-container-section-padding content-center-grid">
             <div class="main-container-collabration-content">
@@ -246,8 +251,7 @@
             <big class="main-container-big">HIRE COWORKER</big>
             <h1 class="main-container-h1">ABOUT HIRECOWORKER</h1>
             <p class="div-para">Hire Coworker is an entirely managed service experience that provides clients with a
-                dedicated
-                assistant, a customer success manager, a surrounding team for support, and industry-first virtual
+                dedicated assistant, a customer success manager, a surrounding team for support, and industry-first virtual
                 assistant management software to task management, streamline communication, file sharing, and team
                 collaboration.</p>
             <div class="div">
@@ -287,7 +291,7 @@
         </div>
         <!-- About Section end-->
         <!-- Process Section Start-->
-        <div class="=main-container-process main-container-section-padding content-center-grid">
+        <div class="main-container-process  content-center-grid">
             <small class="main-container-big">PROCESS</small>
             <h1 class="main-container-h1">HOW IT WORKS</h1>
             <div class="process-section-2">
@@ -363,38 +367,36 @@
     </div>
     <footer>
         <div class="footer-section">
-            <div class="footer-section-1 content-center-grid">
-                <div class="section1-A">
-                    <div class="location display-flex">
-                        <div class="icon content-center-grid">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="icon-content ">
-                            <h2>Our Location</h2>
-                            <p>Silverton Texas USA-79257</p>
-                        </div>
+            <div class="section1-A">
+                <div class="location display-flex">
+                    <div class="icon content-center-grid">
+                        <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <div class="mailus display-flex">
-                        <div class="icon content-center-grid">
-                            <i class="fa-sharp fa-solid fa-envelope-circle-check"></i>
-                        </div>
-                        <div class="icon-content ">
-                            <h2>Mail Us</h2>
-                            <p>nfo@hirecoworker.com</p>
-                        </div>
+                    <div class="icon-content ">
+                        <h2>Our Location</h2>
+                        <p>Silverton Texas USA-79257</p>
                     </div>
-                    <div class="callus display-flex">
-                        <div class="icon content-center-grid ">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div class="icon-content ">
-                            <h2>Call Us</h2>
-                            <p>+1 (848) 200-0555</p>
-                        </div>
+                </div>
+                <div class="mailus display-flex">
+                    <div class="icon content-center-grid">
+                        <i class="fa-sharp fa-solid fa-envelope-circle-check"></i>
+                    </div>
+                    <div class="icon-content ">
+                        <h2>Mail Us</h2>
+                        <p>nfo@hirecoworker.com</p>
+                    </div>
+                </div>
+                <div class="callus display-flex">
+                    <div class="icon content-center-grid ">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="icon-content ">
+                        <h2>Call Us</h2>
+                        <p>+1 (848) 200-0555</p>
                     </div>
                 </div>
             </div>
-            <div class="footer" process-section-img">
+            <div class="footer">
                 <div class="hire-co-worker footer-heading">
                     <h2>Hire Coworker</h2>
                     <p>Hire Coworker provides the best virtual employee for all of your needs. We have been in business
