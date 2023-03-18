@@ -11,58 +11,54 @@
 </head>
 
 <body>
-    <div class="navigation-bar">
-        <nav>
+    <div class="landing-section">
+        <header class="header">
             <div class="nav-logo">
-                <img src="./IMG/new-logo-white.png" alt="">
+                <img src="./IMG/new-logo-white.png" alt="" height="80px" width="100px">
             </div>
-            <div class="nav-service content-center-grid">
+            <div class="nav-content">
                 <ul>
-                    <li>Services</li>
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>
-                        <div class="nav-btn content-center-flex"><i class="fa fa-phone"></i><button>CONNECT US</button>
-                        </div>
-                    </li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <button id="nav-content-btn">
+                        <i class="fa fa-phone"></i>
+                        <label>CONNECT US</label>
+                    </button>
                 </ul>
             </div>
-        </nav>
-        <!--navigaton content -->
-        <div class="nav-content">
-            <div class="nav-content-1">
+            <div class="menubar-icon" onclick="">
+                <i class="fa fa-bars"></i>
+            </div>
+        </header>
+        <video autoplay muted loop playsinline class="landing-section-video">
+            <source src="./IMG/banner-video.mp4">
+        </video>
+        <div class="landing-overlay"></div>
+        <div class="landing-grid">
+            <div class="landing-grid-left">
                 <h1>Hire Coworker / Virtual Assistant</h1>
-                <h2>Life Is Better With <br>A Virtual Assistant</h2>
-                <p>A virtual assistant is an independent contractor that performs administrative support services
-                    for
-                    clients away from the client's office. Although virtual assistant frequently works from
-                    anywhere,
-                    they
-                    have remote access to the necessary planning resources.</p>
-                <div class="nav-content-btn">
-                    <div class="btn content-center-flex">
-                        <i class="fa fa-user"></i>
-                        <button>REQUEST SERVICE</button>
-                    </div>
-                    <div class="btn content-center-flex">
-                        <i class="fa fa-phone"></i>
-                        <button>CALL US</button>
-                    </div>
+                <h3>Life Is Better With <br>
+                    A Virtual Assistant</h3>
+                <p>A virtual assistant is an independent contractor that performs administrative support services for
+                    clients away from the client's office. Although virtual assistant frequently works from anywhere,
+                    they have remote access to the necessary planning resources.</p>
+                <div class="landing-grid-left-btn">
+                    <button><i class="fa fa-user"></i><label>REQUEST SERVICE</label></button>
+                    <button><i class="fa fa-phone"></i><label>CALL US</label></button>
                 </div>
             </div>
-            <div class="nav-content-2 content-center-grid">
-                <div class="nav-content-2-img">
-                    <video autoplay loop muted plays-inline class="nav-content-2-video">
-                        <!-- <source src="./IMG/landing-vid.mp4"> -->
-                    </video>
-                </div>
+            <div class="landing-grid-right content-center-grid">
+                <video autoplay muted loop playsinline class="landing-grid-right-video">
+                    <source src="./IMG/landing-vid.mp4">
+                </video>
             </div>
         </div>
     </div>
     <!-- Main Container -->
     <div class="main-container">
-        
+
         <!-- Services Section start-->
         <div class="main-container-services main-container-section-padding content-center-grid">
             <big class="main-container-big">SERVICES</big>
@@ -251,7 +247,8 @@
             <big class="main-container-big">HIRE COWORKER</big>
             <h1 class="main-container-h1">ABOUT HIRECOWORKER</h1>
             <p class="div-para">Hire Coworker is an entirely managed service experience that provides clients with a
-                dedicated assistant, a customer success manager, a surrounding team for support, and industry-first virtual
+                dedicated assistant, a customer success manager, a surrounding team for support, and industry-first
+                virtual
                 assistant management software to task management, streamline communication, file sharing, and team
                 collaboration.</p>
             <div class="div">
@@ -365,6 +362,8 @@
         </div>
         <!-- Form Section end-->
     </div>
+
+    <!-- Footer Section  -->
     <footer>
         <div class="footer-section">
             <div class="section1-A">
@@ -438,17 +437,27 @@
         <div class="footer-base">
             <div class="footer-base-logo">
                 <small>Follow Us at: </small>
-                <i class="fa-brands fa-facebook"><link rel="stylesheet" href="#"></i>
-                <i class="fa-brands fa-linkedin"><link rel="stylesheet" href="#"></i>
-                <i class="fa-brands fa-square-instagram"><link rel="stylesheet" href="#"></i>
-                <i class="fa-brands fa-square-twitter"><link rel="stylesheet" href="#"></i>
+                <i class="fa-brands fa-facebook">
+                    <link rel="stylesheet" href="#">
+                </i>
+                <i class="fa-brands fa-linkedin">
+                    <link rel="stylesheet" href="#">
+                </i>
+                <i class="fa-brands fa-square-instagram">
+                    <link rel="stylesheet" href="#">
+                </i>
+                <i class="fa-brands fa-square-twitter">
+                    <link rel="stylesheet" href="#">
+                </i>
             </div>
             <div class="footer-base-content">
                 <p>Copyright © 2018- 2023, HireCoWorker- All Rights Reserved.</p>
             </div>
         </div>
     </footer>
+
 </body>
 <script src="https://kit.fontawesome.com/bba0c274b2.js" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
 
 </html>
