@@ -13,11 +13,12 @@
 <body>
     <div class="landing-section">
         <header class="header">
-            <div class="nav-logo">
-                <img src="./IMG/new-logo-white.png" alt="" height="80px" width="100px">
-            </div>
-            <div class="nav-content">
+            <!--  Mobile View Navigation Bar  -->
+            <div class="mobile-nav">
                 <ul>
+                    <div class="icon cancle-icon">
+                        <button id="times-btn" onclick="myFunctionClose()"><i class="fa-sharp fa-regular fa-circle-xmark"></i></button>
+                    </div>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Pricing</a></li>
                     <li><a href="#">About</a></li>
@@ -28,9 +29,26 @@
                     </button>
                 </ul>
             </div>
-            <div class="menubar-icon" onclick="">
-                <i class="fa fa-bars"></i>
+            <!-- Navigation Bar-->
+            <div class="nav-logo">
+                <img src="./IMG/new-logo-white.png" alt="" height="80px" width="100px">
             </div>
+            <div class="nav-content" id="hey-nav">
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <button>
+                        <i class="fa fa-phone"></i>
+                        <label>CONNECT US</label>
+                    </button>
+                </ul>
+            </div>
+            <div class="menubar-icon">
+                <button id="bars-btn" onclick="myFunctionOpen()"><i class="fa fa-bars"></i></button>
+            </div>
+            
         </header>
         <video autoplay muted loop playsinline class="landing-section-video">
             <source src="./IMG/banner-video.mp4">
@@ -57,7 +75,7 @@
         </div>
     </div>
     <!-- Main Container -->
-    <div class="main-container">
+    <div class="main-container" id="main-id">
 
         <!-- Services Section start-->
         <div class="main-container-services main-container-section-padding content-center-grid">

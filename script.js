@@ -1,16 +1,21 @@
-// For Sticky Navigation BarProp...
-
+// For Sticky Navigation Bar 
 window.addEventListener("scroll",function(){
     var sticky_nav = document.querySelector("header");
     var navcontentbtn = document.getElementById("nav-content-btn");
-    sticky_nav.classList.toggle("sticky",window.scrollY>0);
-    // navcontentbtn.classList.toggle("nav-content-btn-toggle",window.scrollY>0);
-    // navcontentbtn.style.backgroundColor = "red"
-    // sticky_nav.style.backgroundColor = "red"
-    // var navbtn = document.querySelector("nav-btn")
-    // navbtn.classList.toggle("sticky-btn",window.scrollY>0);  
-    // navbtn.style.background = "red"  
+    sticky_nav.classList.toggle("sticky",window.scrollY>0); 
 })
-// let menubarbtn = document.querySelector("menubar-icon")
-// console.log(menubarbtn);
 
+
+// Function for Open Mobile View Navigation Baar
+function myFunctionOpen() {
+    document.querySelector('.mobile-nav').classList.add('open-mobile-nav');
+    console.log("open")
+    document.getElementById("bars-btn").style.display="none"
+}
+
+// Function for Close Mobile View Navigation Baar
+function myFunctionClose() {
+    document.querySelector('.mobile-nav').classList.remove('open-mobile-nav');
+    console.log("close")
+    document.getElementById("bars-btn").style.display="block"
+}
