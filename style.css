@@ -184,8 +184,8 @@ header {
     right: 0;
     /* top: 0;
     bottom: 0; */
-    /* height: 100%; */
-    background-image: linear-gradient(180deg, yellow, red);
+    /* height: 100%;
+    background-image: linear-gradient(180deg, yellow, red); */
 }
 
 .landing-overlay {
@@ -1077,9 +1077,7 @@ header {
         grid-template-columns: 1fr;
 
     }
-    #reviews{
-        margin: 50px 0 50px 10px;
-    }
+    
     .form-mail-phone {
         grid-template-columns: 1fr;
     }
