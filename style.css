@@ -1064,6 +1064,9 @@ header {
     grid-template-columns: repeat(11,600px);
     margin-top: 30px;
 }
+#reviews{
+    margin: 50px 0 50px 25px;
+}
 }
 @media (max-width: 500px) {
     html {
@@ -1075,7 +1078,7 @@ header {
 
     }
     #reviews{
-        margin: 50px 0 50px 50px;
+        margin: 50px 0 50px 10px;
     }
     .form-mail-phone {
         grid-template-columns: 1fr;
