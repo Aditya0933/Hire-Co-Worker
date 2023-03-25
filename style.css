@@ -245,6 +245,87 @@ header {
     width: 100%;
 }
 
+/* Google Reviews */
+
+.review_row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 5% 5% 0;
+}
+.review_row{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+}
+.review_row .google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-center{
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+.user-basic{
+    display: flex;
+    justify-content: space-between;
+}
+.user-text p{
+    /* border: none; */
+    font-size: 15px;
+    line-height: 1.5;
+    max-height: 150px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+#reviews{ 
+    display: grid;
+    grid-template-columns: repeat(11,500px);
+    overflow-y: scroll;
+    /* border: 2px solid red; */
+}
+.user-review{
+    padding: 5% 10%;
+    position: relative;
+}
+.user-review::after{
+    content: "";
+    height: 150px;
+    width: 5px;
+    border: none;
+    border-radius: 100px;
+    background-color: #cdbfbf;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    /* margin-right: -20px; */
+}
+.user-info{
+    display: flex;
+    gap: 20px;
+}
+.user-name{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.user-name big{
+    font-size: 20px;
+    font-weight: 520;
+}
+.user-name small{
+    font-size: 15px;
+    font-weight: 500;
+}
+.user-star{
+    margin: 5px 0;
+}
+.user-basic .user-img img{
+    border-radius: 100px;
+}
 
 
 
@@ -876,6 +957,12 @@ header {
         line-height: 1.2;
         padding: 2% 0;
     }
+    .review_row{
+        grid-template-columns: 300px 1fr;
+    }
+    #reviews{ 
+        grid-template-columns: repeat(11,500px);
+    }
 }
 
 @media (max-width: 700px) {
@@ -910,7 +997,9 @@ header {
     .landing-grid-right-video {
         border: 2rem solid #ED1575;
     }
-
+    #reviews{ 
+        grid-template-columns: repeat(11,400px);
+    }
     .main-container-big {
         font-size: 1.5rem;
         font-size: 3rem;
@@ -967,6 +1056,15 @@ header {
 
 }
 
+@media(max-width:637px){
+    .review_row{
+        grid-template-columns: 1fr;
+    }
+    #reviews{
+    grid-template-columns: repeat(11,600px);
+    margin-top: 30px;
+}
+}
 @media (max-width: 500px) {
     html {
         font-size: 47%;
@@ -976,7 +1074,9 @@ header {
         grid-template-columns: 1fr;
 
     }
-
+    #reviews{
+        margin: 50px 0 50px 50px;
+    }
     .form-mail-phone {
         grid-template-columns: 1fr;
     }
